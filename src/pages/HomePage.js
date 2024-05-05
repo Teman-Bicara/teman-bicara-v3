@@ -1,8 +1,8 @@
-import axios from 'axios';
-import React, { useEffect, useState } from 'react';
-import Paginator from '../components/Paginator';
-import PostsList from '../components/PostsList';
-import CONFIG from '../global/config';
+import axios from "axios";
+import React, { useEffect, useState } from "react";
+import Paginator from "../components/Paginator";
+import PostsList from "../components/PostsList";
+import CONFIG from "../global/config";
 
 export default function HomePage() {
   const [loading, setLoading] = useState(true);
@@ -11,7 +11,9 @@ export default function HomePage() {
   useEffect(() => {
     const fetchGetNotes = async () => {
       try {
-        const res = await axios.get(`${CONFIG.BASE_URL}/api/posts?pagination[page]=1&pagination[pageSize]=100`);
+        const res = await axios.get(
+          `${CONFIG.BASE_URL}/api/posts?pagination[page]=1&pagination[pageSize]=100`
+        );
 
         setPosts(res.data.data.reverse());
         setLoading(false);
@@ -30,7 +32,7 @@ export default function HomePage() {
   return (
     <>
       <PostsList posts={posts} />
-      <div className="flex justify-center items-center">
+      <div className='flex items-center justify-center'>
         <Paginator />
       </div>
     </>
