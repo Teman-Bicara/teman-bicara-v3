@@ -1,11 +1,5 @@
 import React from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-// import profil from '../../public/assets/profil-kucing.jpg';
-
-// import profil1 from '../profil1.webp';
-// import profil2 from '../profil2.webp';
-// import profil3 from '../profil3.webp';
-// import profil4 from '../profil4.webp';
 import profil1 from "../img/profile-pic1.png";
 import profil2 from "../img/profile-pic2.png";
 import profil3 from "../img/profile-pic3.png";

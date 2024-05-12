@@ -29,7 +29,11 @@ function LandingPageNav() {
               href="#contact-us"
               className="xs:block xs:w-full transition hover:bg-primary hover:text-white p-4 rounded-md whitespace-nowrap"
             >
+<<<<<<< HEAD
               ContactOri
+=======
+              Contact
+>>>>>>> 27efc6d8aebb681343c1b3f6dd891774f688748e
             </a>
           </li>
           <hr className="bg-[#DADADA] mb-6 sm:hidden" />
